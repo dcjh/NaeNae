@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>K-means Clustering on Google Maps</title>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7i950OACapVpaM1C-_30JP2PoGB4dkdg&libraries=visualization"></script>
+    <script src="initial.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat">
+
+</head>
+
+<body onload="initMap()">
+    <nav>
+        <img src="./assets/NaeNae.png" alt="logo">
+        <div>
+            <h1>Optimised Patroling System Management</h1>
+        </div>
+    </nav>
+
+    <div id="main">
+        <div id="map"></div>
+        <div id="buttons">
+            <button id="show_centroids">Patrol Points</button>
+            <button id="show_points">Past Criminal Locations</button>
+            <button id="optimised_route">Optimised Route</button>
+            <button id="heatmap">Crime Heatmap</button>
+            <div id="directions-panel"></div>
+        </div>
+    </div>
+    
+    <div id="footer">
+        <p id="desc">Integrating crime hotspots analysis with patrol route optimisation allowing law enforcement agencies to
+            prioritise on
+            higher crime risk areas and shorten emergency response times using K-Means Clustering and Google Map's API</p>
+        <h6>Developed by: NaeNae</h6>
+        
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
+
